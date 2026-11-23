@@ -13,7 +13,9 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+  min-width: 1200px;
+  overflow-x: auto;
+   font-family: Arial, sans-serif;
     background: #06142e;
     color: white;
     overflow-x: hidden;
