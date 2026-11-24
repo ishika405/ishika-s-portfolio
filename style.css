@@ -741,34 +741,6 @@ footer {
         font-size: 14px;
     }
 }
-/* DESKTOP VIEW ON MOBILE */
-
-@media (max-width: 600px) {
-    body {
-        min-width: 1200px;
-        overflow-x: auto;
-    }
-
-    nav {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        flex-wrap: nowrap;
-        gap: 22px;
-    }
-
-    .hero {
-        flex-direction: row;
-        min-height: 90vh;
-    }
-
-    .education-container,
-    .projects-container {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
 
 /* RESTORE ANIMATIONS */
 
@@ -843,4 +815,59 @@ section h2 {
         0 0 40px rgba(57, 217, 255, 0.12);
 
     animation: floating 4s ease-in-out infinite;
+}
+/* ===== ISHIKA PORTFOLIO SCROLL ANIMATION ===== */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.9s ease,
+                transform 0.9s ease;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .scroll-reveal {
+        transform: translateY(30px);
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+/* ===== SCROLL REVEAL ANIMATION ===== */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .scroll-reveal {
+        transform: translateY(30px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
