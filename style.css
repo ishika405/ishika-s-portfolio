@@ -741,3 +741,42 @@ footer {
         font-size: 14px;
     }
 }
+/* DESKTOP VIEW ON MOBILE */
+
+@media (max-width: 600px) {
+    body {
+        min-width: 1200px;
+        overflow-x: auto;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        gap: 22px;
+    }
+
+    .hero {
+        flex-direction: row;
+        min-height: 90vh;
+    }
+
+    .education-container,
+    .projects-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* RESTORE ANIMATIONS */
+
+.hero h1,
+section h2 {
+    animation: shine 4s linear infinite;
+}
+
+.hero-image img {
+    animation: floating 4s ease-in-out infinite;
+}
