@@ -1324,3 +1324,59 @@ nav ul li a:hover {
         flex-wrap: wrap;
     }
 }
+/* DESKTOP VIEW ON ALL DEVICES */
+
+body {
+    min-width: 1200px !important;
+    width: 1200px;
+    overflow-x: auto !important;
+}
+
+/* Navbar */
+nav {
+    min-width: 1200px;
+}
+
+nav ul {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 25px;
+}
+
+/* Hero Section */
+.hero {
+    flex-direction: row !important;
+    text-align: left !important;
+    min-width: 1200px;
+}
+
+.hero-text {
+    text-align: left !important;
+}
+
+.hero-image {
+    flex: 0 0 380px !important;
+}
+
+/* Education */
+.education-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* Projects */
+.projects-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* Sections */
+.section {
+    width: 100%;
+    min-width: 1200px;
+}
+
+/* Buttons */
+.buttons {
+    flex-wrap: nowrap !important;
+}
