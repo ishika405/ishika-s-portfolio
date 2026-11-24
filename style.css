@@ -1380,3 +1380,40 @@ nav ul {
 .buttons {
     flex-wrap: nowrap !important;
 }
+/* MOBILE TOUCH ANIMATION */
+
+/* Education Cards */
+.education-card:active {
+    transform: translateY(-12px) scale(1.03);
+    transition: 0.3s ease;
+}
+
+/* Project Cards */
+.project-card:active {
+    transform: translateY(-10px) scale(1.03);
+    transition: 0.3s ease;
+}
+
+/* Skills */
+.skill:active {
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* Interests */
+.interest-card:active {
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* Contact Buttons */
+.contact-btn:active {
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* About Section */
+#about .about-container:active {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
