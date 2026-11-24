@@ -780,3 +780,29 @@ section h2 {
 .hero-image img {
     animation: floating 4s ease-in-out infinite;
 }
+/* ===== FORCE ANIMATIONS ON MOBILE ===== */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        animation: shine 4s linear infinite !important;
+        -webkit-text-fill-color: transparent;
+    }
+
+    section h2 {
+        animation: shine 4s linear infinite !important;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero-image img {
+        animation: floating 4s ease-in-out infinite !important;
+    }
+
+    .education-card,
+    .project-card,
+    .skill,
+    .interest-card,
+    .contact-btn {
+        transition: 0.3s;
+    }
+}
