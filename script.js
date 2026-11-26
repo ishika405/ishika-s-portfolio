@@ -60,3 +60,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/* ===== SAY HELLO FEATURE ===== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const helloBtn = document.getElementById("helloBtn");
+    const greetingMessage = document.getElementById("greetingMessage");
+
+    if (helloBtn && greetingMessage) {
+
+        helloBtn.addEventListener("click", function () {
+
+            greetingMessage.textContent =
+                "Hello! Welcome to Ishika's Portfolio 💙✨";
+
+            greetingMessage.style.opacity = "1";
+
+        });
+
+    }
+
+
+    /* ===== LIGHT & DARK MODE ===== */
+
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (themeToggle) {
+
+        const savedTheme = localStorage.getItem("portfolioTheme");
+
+        if (savedTheme === "light") {
+            document.body.classList.add("light-mode");
+            themeToggle.textContent = "🌙 Dark Mode";
+        }
+
+        themeToggle.addEventListener("click", function () {
+
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+
+                themeToggle.textContent = "🌙 Dark Mode";
+                localStorage.setItem("portfolioTheme", "light");
+
+            } else {
+
+                themeToggle.textContent = "☀️ Light Mode";
+                localStorage.setItem("portfolioTheme", "dark");
+
+            }
+
+        });
+
+    }
+
+});

@@ -871,3 +871,101 @@ section h2 {
         transition: none;
     }
 }
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+/* ===== THEME BUTTON ===== */
+
+.theme-btn {
+    padding: 10px 18px;
+    border: 1px solid #39d9ff;
+    border-radius: 25px;
+    background: rgba(57, 217, 255, 0.08);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #39d9ff;
+    color: #202124;
+    transform: translateY(-3px);
+}
+
+/* ===== HELLO MESSAGE ===== */
+
+#greetingMessage {
+    margin-top: 20px;
+    color: #39d9ff;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* ===== LIGHT MODE ===== */
+
+body.light-mode {
+    background: #f4faff;
+    color: #202124;
+}
+
+body.light-mode nav,
+body.light-mode footer {
+    background: #e1f4fa;
+}
+
+body.light-mode section,
+body.light-mode .hero {
+    background: #f4faff;
+}
+
+body.light-mode section p,
+body.light-mode .description {
+    color: #444;
+}
+
+body.light-mode .hero h2,
+body.light-mode .about-content h3,
+body.light-mode .education-card h3,
+body.light-mode .project-card h3 {
+    color: #202124;
+}
+
+body.light-mode .education-card,
+body.light-mode .project-card,
+body.light-mode #about .about-container,
+body.light-mode .skill,
+body.light-mode .interest-card,
+body.light-mode .contact-btn {
+    background: #ffffff;
+    color: #202124;
+    border-color: #39d9ff;
+}
+
+body.light-mode nav ul li a {
+    color: #202124;
+}
+
+body.light-mode .btn {
+    color: #202124;
+}
+
+body.light-mode .theme-btn {
+    color: #202124;
+}
+
+body.light-mode footer {
+    color: #444;
+}
+
+body.light-mode .about-tags span,
+body.light-mode .project-tag {
+    background: #dff7ff;
+    color: #202124;
+}
